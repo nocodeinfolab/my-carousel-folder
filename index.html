@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Carousel</title>
   <style>
-    body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-    #carousel { width: 100%; max-width: 600px; overflow: hidden; position: relative; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f5f5f5; }
+    #carousel { width: 100%; max-width: 600px; overflow: hidden; position: relative; background: #000; }
     #carousel img { width: 100%; display: none; position: absolute; top: 0; left: 0; }
     #carousel img.active { display: block; }
   </style>
 </head>
 <body>
   <div id="carousel">
-    <!-- Replace src paths with your image file names or URLs -->
-    <img src="hotel.jpg" class="active" alt="Image 1">
-    <img src="hotel.webp" alt="Image 2">
-    <img src="hotel2.jpg" alt="Image 3">
-    <img src="hotel3.webp" alt="Image 4">
+    <img src="hotel.jpg" class="active" alt="Hotel Image 1">
+    <img src="hotel.webp" alt="Hotel Image 2">
+    <img src="hotel2.jpg" alt="Hotel Image 3">
+    <img src="hotel3.webp" alt="Hotel Image 4">
   </div>
   <script>
     let currentIndex = 0;
